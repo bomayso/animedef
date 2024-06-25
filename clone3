@@ -1,3 +1,75 @@
+  local plrs = game:GetService("Players") 
+  local plr = plrs.LocalPlayer
+  local tpService = game:GetService("TeleportService")
+
+local function getServers()
+    local url =
+        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=100&excludeFullGames=true", game.PlaceId)
+    local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet(url)).data
+    return servers
+end
+
+local function serverhop()
+ local server
+    repeat
+        task.wait(1)
+        server = getServers()[Random.new():NextInteger(1, 100)]
+
+    until server.id ~= game.JobId
+
+
+    tpService:TeleportToPlaceInstance(game.PlaceId, server.id, plr)
+end
+
+
+
+_G.Config =  { UserID = "a6eb4e69-060d-42b0-99b5-834601bb6da2", discord_id = 332193090825748484 , Note = "daubuoi", } 
+
+
+
+task.spawn(function()
+wait(30)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skadidau/unfazedfree/main/animedefender"))()
+end)
+
+
+
+
+game:GetService'GuiService'.ErrorMessageChanged:Connect(function()
+        local Code2 = game:GetService'GuiService':GetErrorCode().Value
+		print(Code2)
+		if Code2 > 0 then
+			serverhop()
+		end	
+end)
+
+  if not game:IsLoaded() then
+    game.Loaded:Wait()
+  end
+
+task.spawn(function()
+	while true do
+	task.wait(3)
+	local Code = game:GetService'GuiService':GetErrorCode().Value
+	print(Code)
+		if Code > 0 then
+			serverhop()
+		end
+	end
+end)
+	
+local VirtualUser = game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+local niggaJump = coroutine.create(function ()
+    while 1 do 
+        wait(300)
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+coroutine.resume(niggaJump)
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
 getgenv().SelectedPlayer = "PIfM3NiR" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
