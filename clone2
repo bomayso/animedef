@@ -23,40 +23,15 @@ end
 
 
 
-_G.Config =  { UserID = "a6eb4e69-060d-42b0-99b5-834601bb6da2", discord_id = 332193090825748484 , Note = "daubuoi", } 
-
-
-
-task.spawn(function()
-wait(30)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skadidau/unfazedfree/main/animedefender"))()
-end)
 
 
 
 
-game:GetService'GuiService'.ErrorMessageChanged:Connect(function()
-        local Code2 = game:GetService'GuiService':GetErrorCode().Value
-		print(Code2)
-		if Code2 > 0 then
-			serverhop()
-		end	
-end)
 
   if not game:IsLoaded() then
     game.Loaded:Wait()
   end
 
-task.spawn(function()
-	while true do
-	task.wait(3)
-	local Code = game:GetService'GuiService':GetErrorCode().Value
-	print(Code)
-		if Code > 0 then
-			serverhop()
-		end
-	end
-end)
 	
 local VirtualUser = game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
@@ -71,7 +46,7 @@ local niggaJump = coroutine.create(function ()
 end)
 coroutine.resume(niggaJump)
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "bAfOk2dE" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "lfh7MRWu" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
