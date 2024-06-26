@@ -35,13 +35,7 @@ end)
 
 
 
-game:GetService'GuiService'.ErrorMessageChanged:Connect(function()
-        local Code2 = game:GetService'GuiService':GetErrorCode().Value
-		print(Code2)
-		if Code2 > 0 then
-			serverhop()
-		end	
-end)
+
 
   if not game:IsLoaded() then
     game.Loaded:Wait()
@@ -51,16 +45,7 @@ if game.PlaceId ~= 17490500437 then
 	serverhop()
 end
 
-task.spawn(function()
-	while true do
-	task.wait(3)
-	local Code = game:GetService'GuiService':GetErrorCode().Value
-	print(Code)
-		if Code > 0 then
-			serverhop()
-		end
-	end
-end)
+
 	
 local VirtualUser = game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
