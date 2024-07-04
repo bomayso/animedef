@@ -25,11 +25,17 @@ end
 
 
 
+
+
+	
+
+
   if not game:IsLoaded() then
     game.Loaded:Wait()
   end
 
 
+	
 local VirtualUser = game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
 VirtualUser:CaptureController()
@@ -43,11 +49,11 @@ local niggaJump = coroutine.create(function ()
 end)
 coroutine.resume(niggaJump)
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "kUKrmgMW" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "nUxj6hQl" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
-        Units = {"Electric Cyborg","Magic Arrow"},
+        Units = {"Electric Cyborg","Magic Arrow","Ocean Guardian"},
     }
     getgenv().AltAccountSetting = {
         Trade = true,
