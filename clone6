@@ -59,7 +59,7 @@ getgenv().SelectedPlayer = "k5FLh7mU" -- Main Account/ Account To Send Gem
         Trade = true,
         NotSendGem = false,
         TradeItems = {"Trait Crystal","Risky Dice"},
-KickAfterDoneTrade=true,
+KickAfterDoneTrade=false,
         GiveBackUnit=true
     }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
