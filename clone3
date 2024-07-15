@@ -49,7 +49,7 @@ local niggaJump = coroutine.create(function ()
 end)
 coroutine.resume(niggaJump)
 script_key = "RYJDZDogHGCCzETXYLQdbAAySQnYhLit"
-getgenv().SelectedPlayer = "S1Tfl8vn" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "GLMHJz2K" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
