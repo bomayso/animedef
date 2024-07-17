@@ -61,6 +61,6 @@ getgenv().SelectedPlayer = "" -- Main Account/ Account To Send Gem
         GiveBackUnit=true,
 	KickAfterDoneTrade=true,
     }
-
+daubuoi = true
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
 
