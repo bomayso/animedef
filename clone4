@@ -30,10 +30,6 @@ end
 	
 
 
-  if not game:IsLoaded() then
-    game.Loaded:Wait()
-  end
-
 
 	
 local VirtualUser = game:service'VirtualUser'
@@ -49,7 +45,7 @@ local niggaJump = coroutine.create(function ()
 end)
 coroutine.resume(niggaJump)
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "fEmD30Zo" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "AKw9ESWA" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
@@ -62,4 +58,5 @@ getgenv().SelectedPlayer = "fEmD30Zo" -- Main Account/ Account To Send Gem
 KickAfterDoneTrade=true,
         GiveBackUnit=true
     }
+daubuoi = true
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
