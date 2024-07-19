@@ -33,11 +33,7 @@ end
 
 
 	
-local VirtualUser = game:service'VirtualUser'
-game:service'Players'.LocalPlayer.Idled:connect(function()
-VirtualUser:CaptureController()
-VirtualUser:ClickButton2(Vector2.new())
-end)
+
 local niggaJump = coroutine.create(function ()
     while 1 do 
         wait(300)
