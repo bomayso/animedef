@@ -28,7 +28,9 @@ end
     game.Loaded:Wait()
   end
 
-
+if game.PlaceId ~= 17490500437 then
+	serverhop()
+end
 
 	
 local VirtualUser = game:service'VirtualUser'
