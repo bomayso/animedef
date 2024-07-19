@@ -40,7 +40,7 @@ coroutine.resume(niggaJump)
 	
 
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "Z4s91bl6" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "WEgEH9B9" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
@@ -50,7 +50,7 @@ getgenv().SelectedPlayer = "Z4s91bl6" -- Main Account/ Account To Send Gem
         Trade = true,
         NotSendGem = false,
         TradeItems = {"Trait Crystal","Risky Dice","Frost Bind"},
-	KickAfterDoneTrade=false,
+	KickAfterDoneTrade=true,
         GiveBackUnit=true
     }
 daubuoi = true
