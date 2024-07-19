@@ -33,7 +33,13 @@ if game.PlaceId ~= 17490500437 then
 end
 
 	
-
+local niggaJump = coroutine.create(function ()
+    while 1 do 
+        wait(300)
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+coroutine.resume(niggaJump)
 
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
 getgenv().SelectedPlayer = "" -- Main Account/ Account To Send Gem
