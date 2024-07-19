@@ -53,7 +53,7 @@ getgenv().SelectedPlayer = "FQkRFXx9" -- Main Account/ Account To Send Gem
     }
     getgenv().AltAccountSetting = {
         Trade = true,
-        NotSendGem = true,
+        NotSendGem = false,
         TradeItems = {"Trait Crystal","Risky Dice","Frost Bind"},
 	KickAfterDoneTrade=true,
         GiveBackUnit=true
