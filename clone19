@@ -1,0 +1,57 @@
+  local plrs = game:GetService("Players") 
+  local plr = plrs.LocalPlayer
+  local tpService = game:GetService("TeleportService")
+
+local function getServers()
+    local url =
+        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=100&excludeFullGames=true", game.PlaceId)
+    local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet(url)).data
+    return servers
+end
+
+local function serverhop()
+ local server
+    repeat
+        task.wait(1)
+        server = getServers()[Random.new():NextInteger(1, 100)]
+
+    until server.id ~= game.JobId
+
+
+    tpService:TeleportToPlaceInstance(game.PlaceId, server.id, plr)
+end
+
+
+
+
+
+
+local niggaJump = coroutine.create(function ()
+    while 1 do 
+        wait(300)
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+coroutine.resume(niggaJump)
+	
+
+
+
+	
+
+script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
+getgenv().SelectedPlayer = "I9RdVKY1" -- Main Account/ Account To Send Gem
+    getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
+    getgenv().MainAccountSetting = { -- Unit To Sell
+         ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
+        Units = {"Electric Cyborg","Magic Arrow","Ocean Guardian"},
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal","Risky Dice","Frost Bind"},
+	KickAfterDoneTrade=true,
+        GiveBackUnit=true
+    }
+daubuoi = true
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
