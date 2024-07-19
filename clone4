@@ -51,7 +51,7 @@ getgenv().SelectedPlayer = "RSo8t5p6" -- Main Account/ Account To Send Gem
         Trade = true,
         NotSendGem = false,
         TradeItems = {"Trait Crystal","Risky Dice","Frost Bind"},
-KickAfterDoneTrade=true,
+KickAfterDoneTrade=false,
         GiveBackUnit=true
     }
 daubuoi = true
