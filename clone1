@@ -33,13 +33,6 @@ end
 
 	
 
-local niggaJump = coroutine.create(function ()
-    while 1 do 
-        wait(300)
-        game.Players.LocalPlayer.Character.Humanoid.Jump = true
-    end
-end)
-coroutine.resume(niggaJump)
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
 getgenv().SelectedPlayer = "ip68reaS" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
