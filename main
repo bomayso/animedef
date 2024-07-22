@@ -28,7 +28,11 @@ end
     game.Loaded:Wait()
   end
 
-
+if game.PlaceId ~= 17490500437 then
+	wait(20)
+	serverhop()
+task.wait(20)
+end
 	
 local VirtualUser = game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
