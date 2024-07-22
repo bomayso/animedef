@@ -29,6 +29,7 @@ end
   end
 
 if game.PlaceId ~= 17490500437 then
+	wait(10)
 	serverhop()
 end
 
