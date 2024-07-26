@@ -39,7 +39,7 @@ coroutine.resume(niggaJump)
 
 	
 
-script_key = "RYJDZDogHGCCzETXYLQdbAAySQnYhLit"
+script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
 getgenv().SelectedPlayer = "e7Siy41Y" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
