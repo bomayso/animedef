@@ -24,7 +24,7 @@ end
 
 	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
 
-wait(10)
+wait(20)
 local niggaJump = coroutine.create(function ()
     while 1 do 
         wait(300)
