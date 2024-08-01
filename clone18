@@ -22,6 +22,7 @@ local function serverhop()
 end
 
 
+	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
 
 
 
@@ -40,7 +41,7 @@ coroutine.resume(niggaJump)
 	
 
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "donwhich1" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "HiBKjYeP" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
