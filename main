@@ -67,7 +67,7 @@ end)
                 end
         end
 
-wait(20)
+wait(10)
 
 	serverhop()
 
