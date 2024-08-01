@@ -67,11 +67,11 @@ end)
                 end
         end
 
-	wait(20)
-while true do
+wait(20)
+
 	serverhop()
-wait(1)
-end
+
+
 task.wait(20)
 end
 
