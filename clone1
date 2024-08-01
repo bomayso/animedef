@@ -22,7 +22,7 @@ local function serverhop()
 end
 
 
-wait(10)
+wait(20)
 
 
 
