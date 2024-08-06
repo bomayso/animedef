@@ -67,7 +67,7 @@ end)
                 end
         end
 
-wait(10)
+task.wait()
 
 	serverhop()
 
