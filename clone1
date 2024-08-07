@@ -63,7 +63,7 @@ end)
 
 end
 
-
+task.wait(10)
 
 local niggaJump = coroutine.create(function ()
     while 1 do 
