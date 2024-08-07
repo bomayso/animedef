@@ -75,7 +75,6 @@ end)
 coroutine.resume(niggaJump)
 	
 
-task.wait(10)
 
 	
 
