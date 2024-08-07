@@ -76,7 +76,7 @@ coroutine.resume(niggaJump)
 	
 
 
-task.wait(10)
+
 	
 
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
