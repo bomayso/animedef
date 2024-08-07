@@ -74,7 +74,7 @@ local niggaJump = coroutine.create(function ()
 end)
 coroutine.resume(niggaJump)
 	
-task.wait(10)
+
 
 	
 
