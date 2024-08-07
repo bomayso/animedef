@@ -4,7 +4,7 @@
 
 local function getServers()
     local url =
-        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=100&excludeFullGames=true", game.PlaceId)
+        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=25&excludeFullGames=true", 17017769292)
     local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet(url)).data
     return servers
 end
@@ -13,14 +13,21 @@ local function serverhop()
  local server
     repeat
         task.wait(1)
-        server = getServers()[Random.new():NextInteger(1, 100)]
+        server = getServers()[Random.new():NextInteger(1, 25)]
 
     until server.id ~= game.JobId
 
 
-    tpService:TeleportToPlaceInstance(game.PlaceId, server.id, plr)
+    tpService:TeleportToPlaceInstance(17017769292, server.id, plr)
 end
 
+
+task.spawn(function()
+wait(20)
+if game.PlaceId == 17017769292 then
+	serverhop()
+end
+end)
 
 
 	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
