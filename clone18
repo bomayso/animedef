@@ -23,7 +23,7 @@ end
 
 
 task.spawn(function()
-wait(20)
+wait(10)
 if game.PlaceId == 17017769292 then
 	serverhop()
 end
@@ -47,7 +47,7 @@ coroutine.resume(niggaJump)
 	
 
 script_key = "LgDbSKJpzEGkcJSjevnRXUOZrfCPOtVh"
-getgenv().SelectedPlayer = "l2q1Bzau" -- Main Account/ Account To Send Gem
+getgenv().SelectedPlayer = "S42GSzLu" -- Main Account/ Account To Send Gem
     getgenv().MainAccount = false --Set true if it's the account to receive game, false if the account send gem
     getgenv().MainAccountSetting = { -- Unit To Sell
          ManuallyClaimBooth = false,  --Set true to manually claim booth Fix Crash For Codex
