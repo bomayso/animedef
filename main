@@ -67,10 +67,11 @@ end)
                 end
         end
 
-task.wait()
-
+task.wait(10)
+	while true do
+	task.wait(1)
 	serverhop()
-
+	end
 
 task.wait(20)
 end
