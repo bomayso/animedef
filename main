@@ -67,7 +67,7 @@ end)
                 end
         end
 
-task.wait(10)
+
 	while true do
 	task.wait(1)
 	serverhop()
